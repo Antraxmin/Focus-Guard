@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Focus Guard",
+  "version": "1.0",
+  "description": "Block distracting websites to enhance focus",
+  "permissions": ["storage", "tabs", "webNavigation", "alarms"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon16.png",
+      "128": "icons/icon16.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon16.png",
+    "128": "icons/icon16.png"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Guard</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Focus Guard</h1>
+      <div class="input-group">
+        <input
+          type="text"
+          id="siteInput"
+          placeholder="Enter website to block"
+        />
+        <button id="addSite">Add</button>
+      </div>
+      <ul id="siteList"></ul>
+      <div class="time-settings">
+        <h2>Time Settings</h2>
+        <div class="time-input">
+          <label for="startTime">Start Time:</label>
+          <input type="time" id="startTime" />
+        </div>
+        <div class="time-input">
+          <label for="endTime">End Time:</label>
+          <input type="time" id="endTime" />
+        </div>
+      </div>
+      <button id="lockToggle">Lock</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
